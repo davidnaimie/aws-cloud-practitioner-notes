@@ -42,9 +42,26 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - suports SMB protocol and windows NTFS
 - intagrated with Microsoft Active Directory
 - Can be accessed from AWS or your on premis infrastructure 
-- 
+
+## Why Use a Load Balancer
+- Spreads load across multiple downstream inastances
+- expose a single point of access (DNS) to your application
+- seamlessly handle failures of downsteam instances
+- Does regular health checks on your instances
+- You can use across AZones
+- Provide SSL termination (HTTP) for your wesites
+- # 3 Types of LB (Load Balancer)
+  ---Application  LB (HTTP/ HTTPS ONLY) - Layer 7
+  ---Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4
+  ---Gateway LB - Layer 3
+  
 
 ## ELB's (Elastic Load Balancing)
+- Its a managed load balancer
+- AWS guartees it works, upgrades, maintenance, hight availabilty , provides a few config knobs
+- setting up your own is cheaper but not worth it for the effort you will need to do on your side
+
+
 - 
 - 
 ## Watched the AWS summit in NYC with Swami Sivasunramian
