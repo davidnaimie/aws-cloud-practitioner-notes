@@ -50,27 +50,25 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Does regular health checks on your instances
 - You can use across AZones
 - Provide SSL termination (HTTP) for your wesites
-- # 3 Types of LB (Load Balancer)
-  ---Application  LB (HTTP/ HTTPS ONLY) - Layer 7
-  ---Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4
-  ---Gateway LB - Layer 3
   
-
+- # 3 Types of LB (Load Balancer)
+  - Application  LB (HTTP/ HTTPS ONLY) - Layer 7
+  - Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4
+  - Gateway LB - Layer 3
+  
 ## ELB's (Elastic Load Balancing)
 - Its a managed load balancer
 - AWS guartees it works, upgrades, maintenance, hight availabilty , provides a few config knobs
 - setting up your own is cheaper but not worth it for the effort you will need to do on your side
 
-
-- 
-- 
 ## Watched the AWS summit in NYC with Swami Sivasunramian
 - breakthrough on agent AI
----1 hour 22 min
+- 1 hour 22 min
 - learning Agent Bedrock
 - expanding on building frameworks 
 - JUST RELEASED Strands Agent v1.0  building multi agent system 
 - Amazon Bedrock AgentCore
+  
 ## 🧠 Other Concepts Coming Soon
 - Billing & Pricing
 - Global Infrastructure
