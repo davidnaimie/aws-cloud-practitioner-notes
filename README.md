@@ -47,10 +47,15 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 ## ELB's (Elastic Load Balancing)
 - 
 - 
-
----
+## Watched the AWS summit in NYC with Swami Sivasunramian
+- breakthrough on agent AI
+---1 hour 22 min
+- learning Agent Bedrock
+- expanding on building frameworks 
+- JUST RELEASED Strands Agent v1.0  building multi agent system 
 
 ## 🧠 Other Concepts Coming Soon
 - Billing & Pricing
 - Global Infrastructure
 - Shared Responsibility Model
+- 
