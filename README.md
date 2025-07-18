@@ -53,7 +53,7 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - learning Agent Bedrock
 - expanding on building frameworks 
 - JUST RELEASED Strands Agent v1.0  building multi agent system 
-
+- Amazon Bedrock AgentCore
 ## 🧠 Other Concepts Coming Soon
 - Billing & Pricing
 - Global Infrastructure
