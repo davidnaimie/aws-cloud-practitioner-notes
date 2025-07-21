@@ -63,7 +63,7 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - setting up your own is cheaper but not worth it for the effort you will need to do on your side
 - # 4 Types of LB (Load Balancer)
   - Application  LB (HTTP/ HTTPS ONLY) - Layer 7
-  - Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4
+  - Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4 _ can handle millions of request per second
   - Gateway LB - Layer 3
   - Classic is no longer used
  
