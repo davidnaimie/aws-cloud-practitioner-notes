@@ -50,16 +50,28 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Does regular health checks on your instances
 - You can use across AZones
 - Provide SSL termination (HTTP) for your wesites
-  
-- # 3 Types of LB (Load Balancer)
-  - Application  LB (HTTP/ HTTPS ONLY) - Layer 7
-  - Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4
-  - Gateway LB - Layer 3
-  
+  ## ELB & ASG Summery
+  - High Availability means you have your application across multiple AZ
+  - vertical scaling is increasing the size of the instance
+  - Horizontal scaling is increasing the number of instances
+  - ELasticity is the ability to scale up and down based on the demand
+  - Agility is ablity to work faster to deleate and make rescourses very fast
+    
 ## ELB's (Elastic Load Balancing)
 - Its a managed load balancer
 - AWS guartees it works, upgrades, maintenance, hight availabilty , provides a few config knobs
 - setting up your own is cheaper but not worth it for the effort you will need to do on your side
+- # 4 Types of LB (Load Balancer)
+  - Application  LB (HTTP/ HTTPS ONLY) - Layer 7
+  - Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4
+  - Gateway LB - Layer 3
+  - Classic is no longer used
+ 
+  # Auto Scaling groups (ASG)
+  - Implament Elasticity for your application, across multiple AZ
+  - Scale EC2 instances based on the demand on your system, replace unhealthy
+  - Integrated with the ELB
+
 
 ## Watched the AWS summit in NYC with Swami Sivasunramian
 - breakthrough on agent AI
