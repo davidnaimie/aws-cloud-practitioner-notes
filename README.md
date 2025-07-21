@@ -50,7 +50,19 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
     - s3://my-bucket/my_folder1/another_folder/my_my_file.txt
 - The KEY is composed of the prefix + object name
 - No concept of directories with Buckets just keys with really long names  
-
+# Amazon s3 - Security
+- User-Based
+    - IAM Policies- which user API calls should be allowed for a soecific user from IAM
+- Resource-Based
+    - Bucket Policies - bucket wide rules from the s3 console - allows cross account
+      + JSON based policeis
+    - Object access COntrol List (ACL) - finer grain (can be disabled)
+    - Bucket access Control List (ACL) - less common
+- Note: an IAM principle can access a s3 if..
+      - the user IAM permissions ALLOW it OR the resource policy ALLOWS it
+      - AND thes no exsplicit DENY
+- Encryption: encrypt objects in Amazon s3 using encryption keys
+  
 ## Billing & Pricing 
 - pay as you go
 
