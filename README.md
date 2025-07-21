@@ -69,8 +69,14 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
  
   # Auto Scaling groups (ASG)
   - Implament Elasticity for your application, across multiple AZ
-  - Scale EC2 instances based on the demand on your system, replace unhealthy
+  - Scale EC2 instances Based On The Demand, replace unhealthy
   - Integrated with the ELB
+ 
+  + ASG stratigies include
+  - Manual scaling
+  - Dynamic Scaling
+  - (simple/step Scaling, Targwet tracking scaling, Scedule scaling)
+  - Predictibve scaling
 
 
 ## Watched the AWS summit in NYC with Swami Sivasunramian
