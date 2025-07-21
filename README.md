@@ -25,7 +25,31 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 ### S3
 - Simple Storage Service = object storage
 - Highly durable and scalable
-- Bucket > Object > Key
+- Disaster and recovery
+- Archive
+- Hybrid Cloud storage
+- Application hosting
+- Media Hosting
+- DAta lakes and big date analytics
+- Software delivery
+- static website
+- Bucket > Object > Key (S3 Buckets need to be unique and are created at a regional level)
+    - NO UPPERCASE
+    - 3-63 characters
+    - Not an IP
+    - Must start with lowercase letter or number
+    - must not start with prefix xn--
+    - Must not end with the suffix -s3alias
+- Objects (files) >
+    - Max object size is 5TB
+    - if uploading more than 5GB must use multi-part upload
+    - Matadata ( list of text key / value pair - up to 10) - useful for security lifecycle
+    - Version ID (if versioning is enabled) 
+- Key is the full path of the file:
+    - s3://my=bucket/my_file.txt
+    - s3://my-bucket/my_folder1/another_folder/my_my_file.txt
+- The KEY is composed of the prefix + object name
+- No concept of directories with Buckets just keys with really long names  
 
 ## Billing & Pricing 
 - pay as you go
