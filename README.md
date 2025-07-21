@@ -62,7 +62,11 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
       - the user IAM permissions ALLOW it OR the resource policy ALLOWS it
       - AND thes no exsplicit DENY
 - Encryption: encrypt objects in Amazon s3 using encryption keys
-  
+# S3 - Static website
+- S3 can host static webites and have them accessible on the internet
+- The websote URL will depend on the region
+      They look very similar example(website-aws-region  or  wesite.aws-region)
+- If you get a 403 Forbidden error; make sure the bucket polict allows public reads
 ## Billing & Pricing 
 - pay as you go
 
