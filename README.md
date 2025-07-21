@@ -33,7 +33,7 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - DAta lakes and big date analytics
 - Software delivery
 - static website
-- Bucket > Object > Key (S3 Buckets need to be unique and are created at a regional level)
+# Bucket > Object > Key (S3 Buckets need to be unique and are created at a regional level)
     - NO UPPERCASE
     - 3-63 characters
     - Not an IP
@@ -67,6 +67,16 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - The websote URL will depend on the region
       They look very similar example(website-aws-region  or  wesite.aws-region)
 - If you get a 403 Forbidden error; make sure the bucket polict allows public reads
+# S3 - Versioning
+- You can version youjr files ini Amazon S3
+- It is enabled at the bucket level
+- Its best to practice to version your buckets
+    - protectds against unintended deletes(ablwe to restore)
+    - easy to roll back to [revios version
+- Notes:
+    - Any file that is not versioned prior to enabling versioning will have version "null"
+    - Suspending versioning does not delete the previous versions
+
 ## Billing & Pricing 
 - pay as you go
 
