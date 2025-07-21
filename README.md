@@ -76,6 +76,17 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Notes:
     - Any file that is not versioned prior to enabling versioning will have version "null"
     - Suspending versioning does not delete the previous versions
+ 
+# S3 - Replication (CRR & SRR)
+    cross region replication and Same region replication
+    - Must enable Versioning in source and destination buckets
+    - Buckets can be in differnt AWS accounts
+    - Copying is asynchronous
+    - Must give proper permissions to S3
+
+- Use cases:
+      - CRR - compliance, lower latecyaccess, replication across accounts
+      - SRR - log aggregation, live replication between production and test accounts
 
 ## Billing & Pricing 
 - pay as you go
