@@ -151,7 +151,14 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - least mangment overhead
 - No capacity planning
 - Automated database instantiation and auto scaling based on actual usage
-- PostSQL and MySQL are both supported 
+- PostSQL and MySQL are both supported
+
+# ElastiCashe Overview
+- Relational to Database like RDS
+- is to get managed Redis or Memcached
+- Cashes are in-memory databases with high performances, low latency
+- Helps reduce load off database for read intensive workloads
+- AWS takes care of all the OS maintnence/ patching optimizations, setups, configurations, monitoring, failure recovery and backups
     
 
 ## Billing & Pricing 
