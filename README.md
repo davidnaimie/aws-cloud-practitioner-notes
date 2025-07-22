@@ -167,6 +167,20 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 ## Billing & Pricing 
 - pay as you go
 
+# Redshift Overview
+- Redshift is based on PostSQL, but its not used for OLTP = Online Transaction Proccessing
+- It is OLAP = Online Analytical Proccessing (analytics and data warehousing)
+- Its stored in columnar insteads of row based
+- BI = Business Intellagence tool if youj want to create dashboards
+  # Redshift Serverless now available
+  - pay for only what you use
+  - run analytic workloads
+# EMR (Elastic MapReduce)
+- Helps creating Hadoop cluster (Big Data) to analyse and process vast amount of data
+- you can make a cluster of 100's of EC2 instances
+- SUPPORTS Apache Spark, HBase, Presto, Fink
+- Takes care of all provisions and config
+  - Use cases: data processing, machine learning, web indexing, big data...
 ## Amazon FSx for Lustre
 - A fully managed high performance, scalable file storage for High performance computing (HPC)
 - The name Lustre is derived from 'Lenux' and 'Cluster'
