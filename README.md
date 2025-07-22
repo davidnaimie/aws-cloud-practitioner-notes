@@ -136,6 +136,24 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
     Pay in advanced for monthkly, 1 year, and 3-years of usage (Edge Computing)
     Up to 62% discounted pricing
 
+    # DATABASE    
+# Amazon RDS Relatable Database service (RDS)-CANT SSH INTO YOUR INSTANCE
+- RDS is a managed database
+- Included in the free tier
+# Amazon Aurora
+- Is "AWS cloiud optimized" and claims 5x performance improvement over MYSQL on RDS, over 3x the performance of Postgres on RDS
+- grows automatically of 10GB up to 128TB
+- cost more than RDS (20%) but more efficient
+- NOT INCLUDED in free tier
+# Amazon Aurora SERVERLESS
+- PAY PER SECOND
+- Unpredictable workloads
+- least mangment overhead
+- No capacity planning
+- Automated database instantiation and auto scaling based on actual usage
+- PostSQL and MySQL are both supported 
+    
+
 ## Billing & Pricing 
 - pay as you go
 
