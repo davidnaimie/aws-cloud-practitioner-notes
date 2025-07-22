@@ -118,6 +118,10 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 # S3 Encryption
 - server side encryption is always on by default '
 - Client side Encryption is done by the user before it comes to the server
+# S3 Access Analyzer
+- Ensures that the permissions and people have the accesses that you set
+- Evaluate S3 Buckets, S3 ACL's S3 Acccess Point Policies
+- Powered by IAM Access Analyzer
 ## Billing & Pricing 
 - pay as you go
 
