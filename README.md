@@ -160,7 +160,10 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Helps reduce load off database for read intensive workloads
 - AWS takes care of all the OS maintnence/ patching optimizations, setups, configurations, monitoring, failure recovery and backups
     
-
+# Dynamo DB
+- Standard & Infrequent Access (IA)
+- # DynamoDB - Global Tables
+- Can set up to use in multiple Regions
 ## Billing & Pricing 
 - pay as you go
 
