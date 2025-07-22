@@ -115,6 +115,9 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
   - Small monthly monitoring and auto tiering fee
   - moves objects automatically between access tiers based on usage
   - there no retrieval charge for Intelligent tiering
+# S3 Encryption
+- server side encryption is always on by default '
+- Client side Encryption is done by the user before it comes to the server
 ## Billing & Pricing 
 - pay as you go
 
