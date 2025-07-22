@@ -87,7 +87,34 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Use cases:
       - CRR - compliance, lower latecyaccess, replication across accounts
       - SRR - log aggregation, live replication between production and test accounts
-
+  ## S3-Storage Classes
+  - Can move between classes manually or using S# Lifecycle configurations.
+  # Standard-general purpose= 99.99% Availability
+- Frequently used data-Low latency and high throughput-Sustains 2 concurrent facility failures
+- Use cases: Big Data analytics, mobile & gmaing apps, content distribution
+  # Infrequent Access:
+  - For data that is lessfrequently but requires rapid access whe needed with lower cost
+  # Standard-infrequent access (IA)= 99.99% Availability
+- use cases are Disaster Recovery;backups
+  # OneZone-infrequent access= 99.5% Availability
+- High durability 99.999999% in a single AZ, data lost when AZ is destroyed
+- Storing seconmdary back-up copies of on-premise data, or data yopu can recreate
+# Glacier Storage Classes
+- Low-cost object storage meant for archiving/backup
+- price for storage and object retrieval cost
+  # Glacier Instant Retrieval
+  - milisecond retrieval, great for data accessed once a quarter
+  - minimum storage 90 days
+  # Glacier Flexible Retrieval
+  - Expedited (1-5 minutes), Standard(3-5 hours), Bulk(5-12 hours) free
+  - min storage 90 days
+  # Glacier Deep Archive
+  - Standard (12hours) Bulk(48 hours)
+  - min storage duration of 180 days
+  # Intelligent Tiering
+  - Small monthly monitoring and auto tiering fee
+  - moves objects automatically between access tiers based on usage
+  - there no retrieval charge for Intelligent tiering
 ## Billing & Pricing 
 - pay as you go
 
