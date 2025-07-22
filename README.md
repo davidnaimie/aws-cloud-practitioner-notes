@@ -135,6 +135,7 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
     # Committed-Upfront
     Pay in advanced for monthkly, 1 year, and 3-years of usage (Edge Computing)
     Up to 62% discounted pricing
+
 ## Billing & Pricing 
 - pay as you go
 
