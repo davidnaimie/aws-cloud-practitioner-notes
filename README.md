@@ -125,6 +125,16 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 
 # AWS Snow Family 
 - helps with Edge computing and thats areas with not so good Internet
+  - Pricing
+    You pay for device usage and data transfer out of AWS
+    Data transfer into AWS is free
+    # ON-DEMAND
+    15 days usage for the 210TB
+    shipping days are not included ion the 15 days
+    pay-per day any additional days
+    # Committed-Upfront
+    Pay in advanced for monthkly, 1 year, and 3-years of usage (Edge Computing)
+    Up to 62% discounted pricing
 ## Billing & Pricing 
 - pay as you go
 
