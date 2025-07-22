@@ -136,7 +136,7 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
     Pay in advanced for monthkly, 1 year, and 3-years of usage (Edge Computing)
     Up to 62% discounted pricing
 
-    # DATABASE    
+    # DATABASE */   
 # Amazon RDS Relatable Database service (RDS)-CANT SSH INTO YOUR INSTANCE
 - RDS is a managed database
 - Included in the free tier
