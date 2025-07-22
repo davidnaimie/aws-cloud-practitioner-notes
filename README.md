@@ -122,6 +122,9 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Ensures that the permissions and people have the accesses that you set
 - Evaluate S3 Buckets, S3 ACL's S3 Acccess Point Policies
 - Powered by IAM Access Analyzer
+
+# AWS Snow Family 
+- helps with Edge computing and thats areas with not so good Internet
 ## Billing & Pricing 
 - pay as you go
 
