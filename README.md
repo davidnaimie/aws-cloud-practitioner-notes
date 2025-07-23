@@ -422,5 +422,29 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
   - Create Thumbnails for images uploaded into S3
   - Run a serverless Cron job
 - API Gateway: expose Lambda function as a HTTP API
-- 
-- Lambda 
+
+# What is CloudFormation
+- Is a declarative way of outlining your AWS Infrastructure for any resources
+- example with CloudFormation template:
+  - I want a ssecurityu group
+  - I want 2 EC2 instances
+  - I want 3 S3 buckets
+  - I want a Load Balancer ELB in front of these machines
+- Then CLoudFormation creates those for you in the right order with exact config that you specify
+  # Benefits of AWS CloudFormation 1/2
+  - Infrastructure as code, repeat a architecture in differnt Regions, differnt AWS accounts or enviroments
+    - No resources are manually created
+    - changes to the infrastructure are reviewed through code
+  # COST
+    - Each resources within the stack is tagged with an identifier so you can easily see kow much the stack cost you
+    - estamate the cost using the template
+    - Savings strategy: In Dev, you could automation deletion of templates at 5pm and recreate at 8am safely
+  # Benefits 2/2
+  - Productivity
+    - Ability to destroy and re-create infrastructure on the fly
+    - Automated generation of Diagrams for your templates
+      - Leverage existing Templates on the web
+      - Leverage the documantation
+    - Supports almost all AWS resources
+      - Everthing we see in this course is supported
+      - You can use custom resources for resources not supported
