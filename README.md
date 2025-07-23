@@ -319,3 +319,23 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 # ECR Elastic COntainer Service
 - Private Docker Registry on AWS
 - This is where you store Docker images so they can be run by ECS or Fargate
+# EKS Elastic Kubernetes Service
+- Is the service that allows you to launch Kubernetes clusters on AWS
+- Its an open source system
+- Its Cloud Agnostic (can be used on any cloud - Azure,GCP...
+
+# AWS Lambda
+- Virtual functions- no sservers to manage
+- limited by time and short extentions
+- Scaling is automated and it Runs - on - demand
+  - # Benefits
+  - pay per request and compute time
+  - free tier of 1,000,000 Lambda request and 400k GBs of compute time
+  - integrated with the whole AWS suite of services
+  - Event-Driven: functions get invoked by AWS when needed
+  - integrated with many program langauges
+  - Easy monitoring through Cloud Watch
+  - Increasing RAM will improve CPU and network and its easy to get more resources per functions up to 10GB of RAM
+  - 
+
+- 
