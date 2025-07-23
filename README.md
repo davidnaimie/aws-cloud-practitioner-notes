@@ -400,3 +400,9 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - any runtime aslong as you package as a Docker image
 - Rely on EBS / instance store for disc space
 - Relies on EC2 ( Can be managewd by AWS)
+
+# Amazon Lightsail
+- For people with no or little cloud experience with low and predictable pricing
+- simple web apps and it provides templates
+- Dev test enviroment
+- NO auto scaling and limited AWS configuring
