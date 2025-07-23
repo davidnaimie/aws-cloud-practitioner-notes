@@ -472,3 +472,10 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
   - ASG only: Great for none web apps in production (workers,etc...)
 # Beanstalk has a full Health Monitoring managering 
 
+# Lecture 127 Beanstalk Hands on !!!!
+# AWS CodeDeploy
+- We want to deploy our application automatically
+- Hybrid service, Works with EC2 Instances, Works with On-Premisis Servers
+
+- Servers/ Instances must be provisioned and configured ahead of time with the CodeDeploy Agent
+
