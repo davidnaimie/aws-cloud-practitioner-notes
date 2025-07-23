@@ -406,3 +406,21 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - simple web apps and it provides templates
 - Dev test enviroment
 - NO auto scaling and limited AWS configuring
+
+## Other Compute - Summary
+- Dockers: COntainer technology to run applications
+- ECS: run Docker Containers on EC2 instances
+- Farget: serverless, Run docker containers without provisioning and infrastructure (No EC2 instances)
+- ECR: Private Docker Image repository
+- Batch: Run Batvh jobs on AWS across EC2 instances (runs ontop of the ECS service)
+- Lightsail: predictable and low pricing for simple app and DB stack
+## Lambda Summary - serverless service, Fuction as a service, seamless scaling, reactive
+- Lambda billing is by the run time * By the RAM provisions & by the nuimber of invocations
+- Many Langauges except arbitrary Dockers
+- Invocation time upto 15 minutes
+- USE CASES:
+  - Create Thumbnails for images uploaded into S3
+  - Run a serverless Cron job
+- API Gateway: expose Lambda function as a HTTP API
+- 
+- Lambda 
