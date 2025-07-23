@@ -328,14 +328,14 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Virtual functions- no sservers to manage
 - limited by time and short extentions
 - Scaling is automated and it Runs - on - demand
-  - # Benefits
+  - # Lambda Benefits
   - pay per request and compute time
   - free tier of 1,000,000 Lambda request and 400k GBs of compute time
   - integrated with the whole AWS suite of services
   - Event-Driven: functions get invoked by AWS when needed
-  - integrated with many program langauges
+  - integrated with many program langauges: Node.js, Python, Java, c# (NET Core)/ PowerShell, Ruby, Custom Runtime API
   - Easy monitoring through Cloud Watch
   - Increasing RAM will improve CPU and network and its easy to get more resources per functions up to 10GB of RAM
-  - 
+  - Lambda Container Image : ECS / Fargate is preferred for running arbitrary Dockers images
 
 - 
