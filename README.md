@@ -20,7 +20,56 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - firewall attached to EC2 instance 
 - You choose instance type, OS, region
 - ON-demand, spot, Reserved (standard + Convertable) dedecated host, dedected instance
-- + SHARED RESONSIBILITY 
+- + SHARED RESONSIBILITY
+
+## Amazon FSx for Lustre
+- A fully managed high performance, scalable file storage for High performance computing (HPC)
+- The name Lustre is derived from 'Lenux' and 'Cluster'
+- Machine learning. analytics, video processing, finacial modeling
+- scale up to 100's GB/s, millions of IOP's
+
+## FSx for Windows file server
+- Fully managed, highly reliable, and scalable windows native shared file system
+- Built for windows file server
+- suports SMB protocol and windows NTFS
+- intagrated with Microsoft Active Directory
+- Can be accessed from AWS or your on premis infrastructure 
+
+## Why Use a Load Balancer
+- Spreads load across multiple downstream inastances
+- expose a single point of access (DNS) to your application
+- seamlessly handle failures of downsteam instances
+- Does regular health checks on your instances
+- You can use across AZones
+- Provide SSL termination (HTTP) for your wesites
+  ## ELB & ASG Summery
+  - High Availability means you have your application across multiple AZ
+  - vertical scaling is increasing the size of the instance
+  - Horizontal scaling is increasing the number of instances
+  - ELasticity is the ability to scale up and down based on the demand
+  - Agility is ablity to work faster to deleate and make rescourses very fast
+    
+## ELB's (Elastic Load Balancing)
+- Its a managed load balancer
+- AWS guartees it works, upgrades, maintenance, hight availabilty , provides a few config knobs
+- setting up your own is cheaper but not worth it for the effort you will need to do on your side
+- # 4 Types of LB (Load Balancer)
+  - Application  LB (HTTP/ HTTPS ONLY) - Layer 7
+  - Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4 _ can handle millions of request per second
+  - Gateway LB - Layer 3
+  - Classic is no longer used
+ 
+  # Auto Scaling groups (ASG)
+  - Implament Elasticity for your application, across multiple AZ
+  - Scale EC2 instances Based On The Demand, replace unhealthy
+  - Integrated with the ELB
+ 
+  # ASG stratigies include
+  - Manual scaling
+  - Dynamic Scaling
+  - (simple/step Scaling, Targwet tracking scaling, Scedule scaling)
+  - Predictibve scaling
+
 
 ### S3
 - Simple Storage Service = object storage
@@ -164,9 +213,6 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Standard & Infrequent Access (IA)
 - # DynamoDB - Global Tables
 - Can set up to use in multiple Regions
-## Billing & Pricing 
-- pay as you go
-
 # Redshift Overview
 - Redshift is based on PostSQL, but its not used for OLTP = Online Transaction Proccessing
 - It is OLAP = Online Analytical Proccessing (analytics and data warehousing)
@@ -181,65 +227,76 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - SUPPORTS Apache Spark, HBase, Presto, Fink
 - Takes care of all provisions and config
   - Use cases: data processing, machine learning, web indexing, big data...
-## Amazon FSx for Lustre
-- A fully managed high performance, scalable file storage for High performance computing (HPC)
-- The name Lustre is derived from 'Lenux' and 'Cluster'
-- Machine learning. analytics, video processing, finacial modeling
-- scale up to 100's GB/s, millions of IOP's
-
-## FSx for Windows file server
-- Fully managed, highly reliable, and scalable windows native shared file system
-- Built for windows file server
-- suports SMB protocol and windows NTFS
-- intagrated with Microsoft Active Directory
-- Can be accessed from AWS or your on premis infrastructure 
-
-## Why Use a Load Balancer
-- Spreads load across multiple downstream inastances
-- expose a single point of access (DNS) to your application
-- seamlessly handle failures of downsteam instances
-- Does regular health checks on your instances
-- You can use across AZones
-- Provide SSL termination (HTTP) for your wesites
-  ## ELB & ASG Summery
-  - High Availability means you have your application across multiple AZ
-  - vertical scaling is increasing the size of the instance
-  - Horizontal scaling is increasing the number of instances
-  - ELasticity is the ability to scale up and down based on the demand
-  - Agility is ablity to work faster to deleate and make rescourses very fast
-    
-## ELB's (Elastic Load Balancing)
-- Its a managed load balancer
-- AWS guartees it works, upgrades, maintenance, hight availabilty , provides a few config knobs
-- setting up your own is cheaper but not worth it for the effort you will need to do on your side
-- # 4 Types of LB (Load Balancer)
-  - Application  LB (HTTP/ HTTPS ONLY) - Layer 7
-  - Networ LB (UNTRA HIGH PERFORMANCE, ALLOWS FOR TCP) - LAYER 4 _ can handle millions of request per second
-  - Gateway LB - Layer 3
-  - Classic is no longer used
  
-  # Auto Scaling groups (ASG)
-  - Implament Elasticity for your application, across multiple AZ
-  - Scale EC2 instances Based On The Demand, replace unhealthy
-  - Integrated with the ELB
+# Amazon Athena
+- Serverless query service to - perform analytics against S# objects
+- Uses standard SQL language to query the files
+- Supports CSV,JSON,AVRO,and Parquet (built in Presto engine)
+
+- - pricing $5 per TB of data
+  - use compressed or columnar data for cost-savings (less scan)
  
-  + ASG stratigies include
-  - Manual scaling
-  - Dynamic Scaling
-  - (simple/step Scaling, Targwet tracking scaling, Scedule scaling)
-  - Predictibve scaling
+  - Use cases best when you see: Buisness Intelligence BI/ analytics/ reporting, analyze & query VPC Flows Logs, ELB Logs, CLoudTrails, etc.. 
+- Exam Tip: analyze data in S3 using serverless SQL, use Athena
 
+# QuickSight- is the go-to tool for the "eye" in AWS
+- Creates dashboards on my databases that visually represents the data and show the users the insights thier looking for
+- cool graphs and charts
+- embedded with per session pricing
+- USE CASES:
+  - business analytics
+  - Building visualizations
+  - perform ad-hoc analysis
+  - Get business insights using data
+- Integrated with RDS, Aurora, Athena, Redshift, S3
 
-## Watched the AWS summit in NYC with Swami Sivasunramian
-- breakthrough on agent AI
-- 1 hour 22 min
-- learning Agent Bedrock
-- expanding on building frameworks 
-- JUST RELEASED Strands Agent v1.0  building multi agent system 
-- Amazon Bedrock AgentCore
-  
-## 🧠 Other Concepts Coming Soon
-- Billing & Pricing
-- Global Infrastructure
-- Shared Responsibility Model
-- 
+# DocumentDB
+
+# Neptune (think graph databases)
+- fully managed graph database
+- a popular graph dataset would be a social network
+  - users have friends
+  - posts have comments
+  - comments have likes from users
+  - users share and like post
+- highly availablew across 3 AZ, with up to 15 read replicas
+- Build and run applications working with highly connected datasets- optimized for these complex and hard queries
+- Great for knowlege graphs
+# Timestream (think time series data)
+- fully manged, fast, scalable, serverless time series database
+- Automatically scales up/down to adjust capacity
+- stores and analyzes trillions of events per day
+- 1000,s time faster & 1/10th the cost of relational databases
+- Built-in time series analytics functions (helps you identify patterns in your data in near real-time)
+# Managed Blockchain
+- Blockchain makes it possible to build applications where multiple parties can execute trsnsactions without the need for a trusted, central authority
+- Its a managed service to :
+  - Join public blockchain networks
+  - Or create your own scalable private network
+  - Compatible with the framework Hyperledger Fabric & Ethereum
+# Glue
+- Managed extract, transform, and (ETL) service
+- fully serverless service
+# DMS - Database Migration Service
+- migrate databases to AWS,
+- Supports:
+  - Homogeneous: ex oracle to Oracle
+  - Heterogenous migrations: ex Microsoft SQL Server to Aurora
+  - 
+# Databases & Analytics Summary in AWS
+- Relational Databases- OLTP:RDS & Aurora (SQL)
+- Differences between Multi-AZ, Read Replicas, Multi-Region
+- In-memory Database: ElastiCache
+- Key/Value Database: DynamoDB (serverless) & DAX (cache for DynamoDB)
+- Warehouse - OLAP: Redshift (SQL)MR service
+- Athena
+- Hadoop CLuster: EMR service
+- Athena: quere data on Amazon S3 (serverless & SQL)
+- QuickSight: dashboards on your data (serverless)
+- DocumentDB: think, "Aurora for MongoDB" (JSON- No SQL database)
+- Amazon QLDB: central database for Finacial Transactions Ledger (immune journal, cryptographically verifiable)
+- Amazon Managed Blockchain: de-centralized Managed Hyperledger Fabric & Ethereum blockchains
+- Glue: Managed extract, transform, and (ETL) service  fully serverless service
+- Database Migration: DMS
+- Neptune: graph database
+- Timestream: time-series database
