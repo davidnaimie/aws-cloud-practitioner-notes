@@ -338,4 +338,65 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
   - Increasing RAM will improve CPU and network and its easy to get more resources per functions up to 10GB of RAM
   - Lambda Container Image : ECS / Fargate is preferred for running arbitrary Dockers images
 
-- 
+- # Docker
+- Is a software developemnet platform to deploy apps
+- Apps ar packaged into containers and can be run on any OS
+- Apps run the same regaurdless of where the are run. NO capability issues, less work, easier to maintain and deploy, works with any language
+- Scale containers up and down in seconds
+# ECS Elastic Container Service
+- Launches the docker containers on AWS
+- You must provision and maintain the infrastructure
+- AWS takes care of stopping and starting the containers
+- HAs intergrations with the Application Load Balancer
+# Fargate
+- Also launches containers on AWS
+- You dont provision the infrastructure (NO instances to manage) MOre Simpler
+- Serverless
+- AWS just runs containers for you based on the CPU/RAM you need
+# ECR Elastic COntainer Service
+- Private Docker Registry on AWS
+- This is where you store Docker images so they can be run by ECS or Fargate
+# EKS Elastic Kubernetes Service
+- Is the service that allows you to launch Kubernetes clusters on AWS
+- Its an open source system
+- Its Cloud Agnostic (can be used on any cloud - Azure,GCP...
+# AWS Lambda
+- Virtual functions- no sservers to manage
+- limited by time and short extentions
+- Scaling is automated and it Runs - on - demand
+  - # Lambda Benefits
+  - pay per request and compute time
+  - free tier of 1,000,000 Lambda request and 400k GBs of compute time
+  - integrated with the whole AWS suite of services
+  - Event-Driven: functions get invoked by AWS when needed
+  - integrated with many program langauges: Node.js, Python, Java, c# (NET Core)/ PowerShell, Ruby, Custom Runtime API
+  - Easy monitoring through Cloud Watch
+  - Increasing RAM will improve CPU and network and its easy to get more resources per functions up to 10GB of RAM
+  - Lambda Container Image : ECS / Fargate is preferred for running arbitrary Dockers images
+
+# API Gateway
+- Use a REST API to API Gateway for the Client to have access to your Lamba or DynamoDB serverless And the API will Proxy the request
+- Fully managed service for developers to easiely create, publish, maintain, monitor, and secure API,s
+- serveless and scalable
+- Supports RESTful APIs and Websockets APIs
+- support for security, user authentuication, API throttling, API keys and monitoring...
+# Batch
+- Fully managed batch proccessing at any scale
+- runs 100,000s of computing batch jobs on AWS
+- A Batch job is a job with a start and a end
+- provisions ther right amount of CPU and RAM
+- Schedule the Batvh job and AWS does the rest
+- THey are define as Docker images and run on ECS
+- Helpful for cost optimazations and focusing less on the infrastructure
+
+# Batrch VS Lambda
+- # Lambda:
+  - time limit
+  - Limitied runtimes'
+  - Limited temp disk space
+  - Serverless
+- # Batch:
+- No time limit
+- any runtime aslong as you package as a Docker image
+- Rely on EBS / instance store for disc space
+- Relies on EC2 ( Can be managewd by AWS)
