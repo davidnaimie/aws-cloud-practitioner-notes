@@ -448,3 +448,27 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
     - Supports almost all AWS resources
       - Everthing we see in this course is supported
       - You can use custom resources for resources not supported
+  # Cloud Development Kit (CDK)
+  - A way to enter your preferred language and the code is compiled into CloudFormation template JSON/YAML
+  - Therefor you can deploy intrastructure and application runtime code together
+    - Great for Lambda functions
+    - Great for Dockers containers in ECS/EKS
+  # Elastic Beastalk Overview
+  - its a Developer centric view of depoying a app on AWS
+  - Its uses all the components we saw before: EC2, ASG, ELB, RDS, etc
+  - Its a all-in-one view thats easy to make sense of
+  - # Beanstalk= Paas Platform as a Service
+  - its free but you pay for the underlining services
+  # Elastic Beanstalk is a manged service
+  - Instance config/ OS is handled by Beanstalk
+  - Deployment stratagy is configurable but performed by EB
+  - Capacity provisioning
+  - LB and Auto scaling
+  - App health-monitoring and responsiveness
+# Just the application code is the resposibility of the developer
+- Three architecture models:
+  - Single instance deployment: good for dev
+  - LB + ASG: Great for production and pre-production web applications
+  - ASG only: Great for none web apps in production (workers,etc...)
+# Beanstalk has a full Health Monitoring managering 
+
