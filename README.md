@@ -300,3 +300,22 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Database Migration: DMS
 - Neptune: graph database
 - Timestream: time-series database
+  
+# Docker
+- Is a software developemnet platform to deploy apps
+- Apps ar packaged into containers and can be run on any OS
+- Apps run the same regaurdless of where the are run. NO capability issues, less work, easier to maintain and deploy, works with any language
+- Scale containers up and down in seconds
+# ECS Elastic Container Service
+- Launches the docker containers on AWS
+- You must provision and maintain the infrastructure
+- AWS takes care of stopping and starting the containers
+- HAs intergrations with the Application Load Balancer
+# Fargate
+- Also launches containers on AWS
+- You dont provision the infrastructure (NO instances to manage) MOre Simpler
+- Serverless
+- AWS just runs containers for you based on the CPU/RAM you need
+# ECR Elastic COntainer Service
+- Private Docker Registry on AWS
+- This is where you store Docker images so they can be run by ECS or Fargate
