@@ -495,3 +495,10 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - Allows you to start a secure shell on your EC2 and On-premises servers
 - No SSH access, bastion host, or SSH keys needed
 - No port 22 needed (better security)`
+# System Manager Parameter Store
+- secure storage for configuration and secrets
+- API Keys, passwords, configurations...
+- SErverless, scalable, durable, easy, SDK
+- Control access permissions using IAM
+- Version tracking & encryptions (optional)
+- 
