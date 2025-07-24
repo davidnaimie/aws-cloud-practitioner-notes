@@ -491,3 +491,7 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - WOrks for Linux, Windows, MacOS, and Rasberry Pi OS (Rasbian)
 # SSM - EXAM HINT: Anytime you want to patch your fleet of EC2 instances or on premisis servers or a command consistantly across all yourt servers.
 
+# System Manager SSM Session Manager
+- Allows you to start a secure shell on your EC2 and On-premises servers
+- No SSH access, bastion host, or SSH keys needed
+- No port 22 needed (better security)`
