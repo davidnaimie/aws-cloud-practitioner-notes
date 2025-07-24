@@ -479,3 +479,15 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 
 - Servers/ Instances must be provisioned and configured ahead of time with the CodeDeploy Agent
 
+# Systems Manager (SSM)
+- helps to mangage your EC2 and On-Premises system at scale
+- Another Hybrid AWS service
+- Get operational insights about the state of your infrastructure
+- Suites of 10+ products
+- Most Important Features
+  - Patching automation for enhanced compliance
+  - Run commands across entire fleets of service
+  - Store parameter configuration with the SSM Parameter store
+- WOrks for Linux, Windows, MacOS, and Rasberry Pi OS (Rasbian)
+# SSM - EXAM HINT: Anytime you want to patch your fleet of EC2 instances or on premisis servers or a command consistantly across all yourt servers.
+
