@@ -497,8 +497,24 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - No port 22 needed (better security)`
 # System Manager Parameter Store
 - secure storage for configuration and secrets
-- API Keys, passwords, configurations...
 - SErverless, scalable, durable, easy, SDK
 - Control access permissions using IAM
 - Version tracking & encryptions (optional)
-- 
+
+# Deployment - Summary
+- CLoudFormation: (AWS only)
+  - Inffastructure as code and works with almost all AWS services
+  - Repeat across regions and accounts
+- Beanstalk: AWS Only
+  - PaaS Platform as a service, limited to ceertain or Docker
+  - Deploy code consistntly with a known architecture ex: ALB+EC2+RDS
+- CodeDeploy (hybrid): Deploy & upgrade any application onto servers
+- Systems Manager (Hybrid): Patch, configure and run commands at scale
+
+# Developer Services - Summary
+- CodeCommit: stores code in a private git repository
+- CodeBuild: build and test code in AWS
+- CodeDeploy: Deploy code onto servers
+- CodePipeline: Orchestration of pipeline
+- CodeArtifact: Store software packages/ dependencies on AWS
+- AWS CDK: Define your cloud infrastructure using a programming language
