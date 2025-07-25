@@ -492,6 +492,7 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 # SSM - EXAM HINT: Anytime you want to patch your fleet of EC2 instances or on premisis servers or a command consistantly across all yourt servers.
 
 # System Manager SSM Session Manager
+- used for patching systems at scale, gives you visibility and control of your infrastructure
 - Allows you to start a secure shell on your EC2 and On-premises servers
 - No SSH access, bastion host, or SSH keys needed
 - No port 22 needed (better security)`
