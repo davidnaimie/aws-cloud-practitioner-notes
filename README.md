@@ -519,3 +519,4 @@ Notes and key concepts from my AWS Cloud Practitioner study journey
 - CodePipeline: Orchestration of pipeline
 - CodeArtifact: Store software packages/ dependencies on AWS
 - AWS CDK: Define your cloud infrastructure using a programming language
+- code artifact : also known to manage artifact repository /dependencies makes it easy for organization of any size to securely store publish and share software packages 
